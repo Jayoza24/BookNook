@@ -1,0 +1,161 @@
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0 50px;
+}
+.left h2{
+  margin: 0 50px;
+  font-size: 40px;
+  color: #252627;
+}
+.left p{
+  margin: 40px 50px;
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: justify;
+  color: #252627;
+}
+.left button{
+  width: 30%;
+  padding: 15px;
+  border-radius: 15px;
+  letter-spacing: 8px;
+  font-weight: 600;
+  border-color: transparent;
+  background-color: #904E55;
+  color: #F2EFE9;
+  margin: 0 40px;
+  cursor: pointer;
+}
+.right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+.right iframe{
+  height: 60%;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, .2);
+}
+.top_writes{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.cards{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top_writes video{
+  position: absolute;
+  object-fit: cover;
+  opacity: 100%;
+}
+.writingContent{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.bookContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.leftBook{
+  width: 60%;
+  padding: 20px;
+  background-color: #252627;
+}
+.leftBook img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.rightBook{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #252627;
+}
+.rightBook h3{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #904E55;
+  letter-spacing: 8px;
+}
+.rightBook p{
+  text-align: justify;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-wrap: wrap;
+  color: #F2EFE9;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .header{
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .main{
+    flex-direction: column;
+  }
+  .left{
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    margin-top: 80px;
+  }
+  .left h2{
+    font-size: 30px;
+  }
+  .left p{
+    font-size: 12px;
+  }
+  .right{
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+  }
+  .right iframe{
+    height: 100%;
+    width: 80%;
+  }
+}

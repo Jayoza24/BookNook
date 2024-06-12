@@ -1,0 +1,47 @@
+.w_card{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #BFB48F;
+    border-radius: 12px;
+    margin: 10px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .5);
+    transition: .8s;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .w_card:hover{
+    background-color: #564E58;
+    color: #F2EFE9;
+  }
+  .w_top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .w_top img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    margin: 10px 10px;
+    border-radius: 20%;
+  }
+  .w_top h5{
+    margin: 20px 10px;
+    text-wrap: wrap;
+    font-size: 16px;
+  }
+  .w_content{
+    width: 100%;
+    height: 74.5%;
+  }
+  .w_content p{
+    height: 100%;
+    margin: 0px 10px;
+    overflow: hidden;
+    text-align: justify;
+    word-break: break-all;
+    text-overflow: ellipsis;
+  }
