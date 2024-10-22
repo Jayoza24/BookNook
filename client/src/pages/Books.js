@@ -24,7 +24,7 @@ function Books() {
     },[]);
 
     const getBooks = async () =>{
-        const result = await axios.get("http://localhost:3001/allBooks");
+        const result = await axios.get("https://booknook-backend-2s18.onrender.com/allBooks");
         setBooks(result.data.data);
     }
     const checkLogin = () => {
