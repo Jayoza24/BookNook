@@ -19,7 +19,7 @@ function FullBookView(props) {
 
     const getBook = async () => {
         try {
-            const result = await axios.get(`http://localhost:3001/getBook/${id}`);
+            const result = await axios.get(`https://booknook-backend-2s18.onrender.com/getBook/${id}`);
             setBook(result.data.data);
         } catch (error) {
             console.error("Error fetching book data:", error);
@@ -81,7 +81,7 @@ function FullBookView(props) {
                 <div className={fullBookCss.left} id="pdf">
                     {Book ? (
                         <object type='application/pdf' 
-                            data={`http://localhost:3001/public/books/${Book.book}#toolbar=0&navpanes=0&scrollbar=0`} >
+                            data={`https://booknook-backend-2s18.onrender.com/public/books/${Book.book}#toolbar=0&navpanes=0&scrollbar=0`} >
                             No Book
                         </object>
                     ) : (
