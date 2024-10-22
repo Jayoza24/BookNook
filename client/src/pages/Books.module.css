@@ -1,0 +1,56 @@
+.bookMain{
+    height: 100vh;
+    width: 100%;
+    background-color: #F2EFE9;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+.topPoster{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topPoster video{
+    object-fit: cover;
+    user-select: none;
+}
+.searchBar{
+    width: 30%;
+    position: absolute;
+    bottom: 15%;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    align-items: center;
+}
+.searchBar i{
+    padding: 20px;
+}
+.searchBar input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 20px;
+    background-color: transparent;
+    color: #252627;
+}
+.searchBar input::placeholder{
+    color: #252627;
+}
+.searchBar input:focus{
+    outline: none;
+}
+.bookCards{
+    padding: 30px 0;
+}
+.bookCards h3{
+    margin: 20px;
+}

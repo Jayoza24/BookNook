@@ -1,0 +1,32 @@
+.bookCard{
+    width: 100%;
+    position: relative;
+    left: -200px;
+}
+.bookCardContent{
+    padding: 20px;
+    background-color: #564E58;
+    color: #F2EFE9;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgb(0, 0, 0,0.3);
+    cursor: pointer;
+    transition: .5s;
+}
+.bookCardContent:hover{
+    box-shadow: 0px 8px 20px #BFB48F;
+}
+.bookCardContent h3{
+    color: #BFB48F;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+.authDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
