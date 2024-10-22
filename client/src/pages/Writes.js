@@ -36,17 +36,17 @@ function Writes() {
     }
     
     const getThoughts = async () => {
-        await axios.get('http://localhost:3001/getWrites/Thoughts')
+        await axios.get('https://booknook-backend-2s18.onrender.com/getWrites/Thoughts')
             .then(result => setThoughts(result.data.data))
             .catch(err => console.log(err));
     };
     const getQuotes = async () => {
-        await axios.get('http://localhost:3001/getWrites/Quotes')
+        await axios.get('https://booknook-backend-2s18.onrender.com/getWrites/Quotes')
             .then(result => setQuotes(result.data.data))
             .catch(err => console.log(err));
     };
     const getBlogs = async () => {
-        await axios.get('http://localhost:3001/getWrites/Blog')
+        await axios.get('https://booknook-backend-2s18.onrender.com/getWrites/Blog')
             .then(result => setBlogs(result.data.data))
             .catch(err => console.log(err));
     };
