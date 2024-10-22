@@ -14,7 +14,7 @@ function WritesUpload() {
         e.preventDefault();
         const name = window.localStorage.getItem("username");
 
-        axios.post('http://localhost:3001/uploadWrites', { name, title, content, type })
+        axios.post('https://booknook-backend-2s18.onrender.com/uploadWrites', { name, title, content, type })
             .then(() => navigate('/writes'))
             .catch(err => console.log(err));
     }
