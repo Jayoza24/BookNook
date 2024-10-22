@@ -16,7 +16,7 @@ function BookUpload() {
         formData.append('publisher',publisher);
         formData.append('description',description);
         formData.append('book',book);
-        axios.post('http://localhost:3001/uploadBook',formData)
+        axios.post('https://booknook-backend-2s18.onrender.com/uploadBook',formData)
         .then(res => console.log(res))
         .catch(err => console.log(err))
     }
