@@ -25,7 +25,7 @@ const ProfilePage = () => {
     }
 
     const getUser = async() => {
-        await axios.post('http://localhost:3001/userData',
+        await axios.post('https://booknook-backend-2s18.onrender.com/userData',
             {token: window.localStorage.getItem("token")})
             .then(data => setUserData(data.data.data))
             .catch(err => console.log(err))
