@@ -20,7 +20,7 @@ const LoginPage = () => {
 
     const submitRegister = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/register',{name,email,password})
+        axios.post('https://booknook-backend-2s18.onrender.com/register',{name,email,password})
         .then(navigate('/login'))
         .catch(err => console.log(err))
         handleLoginClick()
@@ -28,7 +28,7 @@ const LoginPage = () => {
 
     const submitLogin = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/login',{email,password})
+        axios.post('https://booknook-backend-2s18.onrender.com/login',{email,password})
         .then(result => {
             console.log(result.data);
             if(result.status === 201){
