@@ -75,7 +75,7 @@ function Home() {
     }
 
     const getThoughts = async() => {
-        await axios.get('http://localhost:3001/getWrites/Thoughts')
+        await axios.get('https://booknook-backend-2s18.onrender.com/getWrites/Thoughts')
         .then(result => setThoughts(result.data.data))
         .catch(err => console.log(err))
     }
